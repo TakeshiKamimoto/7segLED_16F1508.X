@@ -1,6 +1,6 @@
 /*
  * File:   main.c
- * Author: takes
+ * 7segment LED indicator as I2C slave device
  *
  * Created on 2022/01/23, 14:07
  */
@@ -198,7 +198,7 @@ void digitSelect(unsigned char d){
 }
 
 
-//I2Cデータ受信時にここが呼ばれて、受信データを獲得する
+//I2Cデータ受信時にここが呼ばれて、受信データを表示数値の変数に格納する
 void onI2CReceiveCallback(unsigned char address, unsigned char data) {
     switch( address ){
         case 0x00:

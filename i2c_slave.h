@@ -11,7 +11,6 @@ extern "C" {
 
 void setupI2CSlave(short address);
 void checkStateAndManageI2c();
-
 void onI2CReceiveCallback(unsigned char address, unsigned char data);
 //void setI2CWriteCharCallback(unsigned char address);
 unsigned char I2CWriteChar;
